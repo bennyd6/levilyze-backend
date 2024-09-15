@@ -22,7 +22,7 @@ def analyze_time_complexity():
 
     try:
         # Generate the time complexity analysis
-        model = genai.GenerativeModel('gemini-pro')  # Verify that this is the correct method
+        model = genai.GenerativeModel("gemini-1.5-flash")  # Verify that this is the correct method
         response = model.generate_content(f"Analyze the time complexity: {code}. Important: don't give any additional statements, just give time complexity.")
         
         if response and response.text:
